@@ -18,7 +18,8 @@ layout: default
         {% for project_page in projects %}
 
             <a class="post-link" href="{{ project_page.permalink | relative_url }}">
-              <h3> {{ project_page.title }} </h3>
+              <h2> {{ project_page.title }} </h2>
+              <p>{{ project_page.description }}</p>
             </a>
 
         {% endfor %}

@@ -13,8 +13,13 @@
             text-decoration: none;
             background-color: $header-color;
         }
-        h3 {
+        h2 {
             margin:0;
+            font-weight: 300;
+        }
+        p {
+            font-size: small;
+            margin-bottom: 0px;
         }
     }
 }
