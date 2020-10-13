@@ -17,6 +17,8 @@
         fill: $theme-color;
     }
     a {
+        text-decoration: none;
+        
         &:not(:first-child) {
             margin-left:6px;
         }
