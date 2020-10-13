@@ -1,13 +1,16 @@
-title: Leaf Blog
-iconURL: assets/default-icon.png
+title: Yεrεmεe
+iconURL: /assets/default-icon.png
 theme: jekyll-theme-leaf
+
+exclude: [SiteLocalTest.cmd, jekyll-theme-leaf.gemspec, Gemfile, Gemfile.lock]
+
 
 # for a clean URL
 # permalink: :slug
 
 social:
-  twitter: _SupunKavinda
-  github: SupunKavinda
+  github: yeremee
+  mail: yeremee@outlook.com
 
 plugins:
  - jekyll-feed

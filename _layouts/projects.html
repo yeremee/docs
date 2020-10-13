@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <!-- {{ content }} -->
+
+    <!-- {%- if page.list_title -%}
+      <h2 class="post-list-heading">{{ page.list_title }}</h2>
+    {%- endif -%} -->
+
+    <div class="box home-box">
+      <div class="post-list">
+
+        {% assign projects = site.pages | where: "project_startpage", true | where: "pl_language", page.pl_language %}
+
+        {% for project_page in projects %}
+
+            <a class="post-link" href="/{{ project_page.permalink }}">
+              <h3> {{ project_page.title }} </h3>
+            </a>
+
+        {% endfor %}
+
+      </div>
+    </div>
+
+
+</div>

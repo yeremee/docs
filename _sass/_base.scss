@@ -74,19 +74,21 @@ pre,
 code {
     font-family: $code-font-family;
     font-size: 0.9375em;
-    border-radius: 3px;
+    background: $header-color;
 }
 
 code {
     padding: 1px 5px;
+    border-radius: 3px;
 }
  
- pre {
-    padding: 8px 12px;
+pre {
+    // padding: 8px 12px;
     overflow-x: auto;
-    padding: 20px;
-    background: $header-color;
-    border-radius: 20px;
+    padding: 10px;
+    // background: $header-color;
+    border-radius: 10px;
+    margin-top: 10px;
  
     > code {
         border: 0;
