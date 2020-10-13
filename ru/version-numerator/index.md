@@ -4,7 +4,7 @@ title: Version Numerator
 project_startpage: true
 permalink: ru/version-numerator/
 pl_language: ru
-pl_path: version-numerator/
+pl_path: version-numerator
 ---
 
 

@@ -1,7 +1,7 @@
 <header class="site-header">
   
   <a class="site-title" rel="author" 
-      href="/{{ page.pl_language }}">
+      href="{{ page.pl_language | relative_url }}">
     {{ site.title }}
   </a>
 
@@ -15,6 +15,7 @@
         </span>
       </label>
 
+      <!-- Доступные языки -->
       <div class="trigger">
 
         {% assign all_langs = site.pages | map: "pl_language" | uniq | compact %}
@@ -28,7 +29,7 @@
           {% endif %} 
 
           <a class="{{ className }}" 
-              href="/{{ lang }}/{{ page.pl_path }}">
+              href="{{ page.pl_path | prepend: '/' | prepend: lang | relative_url}}">
             {{ lang }}
           </a>
 
